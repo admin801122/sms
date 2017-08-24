@@ -1,3 +1,8 @@
-µ¼ÈëscriptÖĞµÄÊı¾İ¿â½Å±¾
-ĞŞ¸Äresources.propertiesÖĞµÄÊı¾İ¿âÁ¬½Ó´®
-µÇÂ¼ÓÃ»§/ÃÜÂëadmin/123456
+Spring MVC
+Shiro
+Mybatis
+Velocity
+
+å¯¼å…¥scriptä¸­çš„æ•°æ®åº“è„šæœ¬
+ä¿®æ”¹resources.propertiesä¸­çš„æ•°æ®åº“è¿æ¥ä¸²
+ç™»å½•ç”¨æˆ·/å¯†ç admin/123456
