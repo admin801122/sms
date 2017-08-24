@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper    
+PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"    
+"http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<mapper namespace="com.hxs.sms.dao.core.SensitiveWordDAO">
+	<!-- 结果映射 -->
+	<resultMap id="default" type="com.hxs.sms.model.core.SensitiveWord">
+		<result property="word" column="word" />
+		<result property="replaceMode" column="replaceMode" />
+	</resultMap>
+	<!-- 根据类型 -->
+	<select id="getAll" resultMap="default">
+		select * from t_sys_sensitive_word 
+	</select>
+	<select id="query" resultMap="default">
+		select * from t_sys_sensitive_word 
+		<include refid="where"/>
+ 		 limit #{offset},#{pageSize}
+	</select>
+	<sql id="where">
+		<if test="word!=null and word!=''">
+			where word like "%"#{word}"%"
+		</if>
+	</sql>
+	<select id="count" resultType="long">
+ 	select count(*) from t_sys_sensitive_word 
+ 		<include refid="where"/>
+ 	</select>
+	<insert id="add">
+		insert into t_sys_sensitive_word (word,replaceMode)
+		values(#{word},#{replaceMode})
+	</insert>
+	<delete id="delete">
+		delete from t_sys_sensitive_word where word=#{word}
+	</delete>
+</mapper>

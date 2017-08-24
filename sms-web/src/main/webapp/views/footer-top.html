@@ -1,0 +1,16 @@
+#set($local_vender = '/resources')
+<!-- basic scripts -->
+
+<!--[if !IE]> -->
+<script src="$local_vender/components/jquery/dist/jquery.js"></script>
+
+<!-- <![endif]-->
+
+<!--[if IE]>
+<script src="$local_vender/components/jquery.1x/dist/jquery.js"></script>
+<![endif]-->
+<script type="text/javascript">
+    if ('ontouchstart' in document.documentElement) document.write("<script src='$local_vender/components/_mod/jquery.mobile.custom/jquery.mobile.custom.js'>" + "<" + "/script>");
+</script>
+<script src="$local_vender/components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="$local_vender/components/jquery-json/jquery.json.js"></script>

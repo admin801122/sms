@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tools>
+    <toolbox scope="application">
+        <tool key="date" class="org.apache.velocity.tools.generic.DateTool"/>
+        <tool key="dateWeek" class="com.hxs.sms.util.velocity.DateWeekTool"/>
+        <tool key="number" class="org.apache.velocity.tools.generic.NumberTool"/>
+        <tool key="json" class="com.hxs.sms.util.velocity.JsonTool"/>
+        <tool key="shiro" class="com.hxs.sms.util.velocity.Permission"/>
+        <!--<tool>
+            <key>dateWeek</key>
+            <scope>application</scope>
+            <clDateWeekToolTool</class>
+        </tool>
+        <tool>
+            <key>number</key>
+            <scope>application</scope>
+            <class>org.apache.velocity.tools.generic.NumberTool</class>
+        </tool>
+        <tool>
+            <key>json</key>
+            <scope>application</scope>
+            <clJsonToolTool</class>
+        </tool>
+        &lt;!&ndash; application start &ndash;&gt;
+        <tool>
+            <key>shiro</key> &lt;!&ndash; 可选默认为 shiro &ndash;&gt;
+            <scope>application</scope>
+            <clPermissionsion</class>
+        </tool>-->
+        <!-- application end -->
+    </toolbox>
+</tools>
